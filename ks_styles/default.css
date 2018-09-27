@@ -1,0 +1,191 @@
+/**************************************************************************************************************
+ *
+ * Feel free to edit this file. This file contains the following:
+ *
+ * a) CSS that overwrites Bootstrap css
+ * 
+**************************************************************************************************************/
+
+/*Specify your preferred font-family here.. this will overwrite Bootstrap's and KSP's font-family */
+body {
+	padding-top: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #E6E6E6;
+}
+
+.container {
+	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin-bottom: 25px;
+	min-height: 500px;
+	padding: 10px 20px 30px;
+	z-index: 2;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DED7D7;
+}
+
+
+/**************************************************************************************************************
+ *
+ *css that overwrites Bootstrap css
+ * 
+**************************************************************************************************************/
+/*field width, we dont want to use Bootstrap's full width column as its misleading.. we refer to actual input size*/
+.ks-form-control {
+	width: auto;
+	display: inline;
+}
+
+@media print {
+	body * {
+		visibility: hidden;
+	}
+	.ks_printarea * {
+		visibility: visible;
+	}
+	.ks_printarea {
+		position: absolute;
+		top: 40px;
+	}
+	table,th,td {
+		border: 1px solid black;
+	}
+	.ks_tohide {
+		display: none;
+	}
+	a[href]:after {
+		content: none !important;
+	}
+}
+
+/**************************************************************************************************************
+ *
+ * Legacy CSS.. feel free to remove.. Mostly are Pre-Bootstrap CSS
+ * 
+**************************************************************************************************************/
+ .font-std {
+	font-family: Verdana, Arial;
+	font-size: 10px;
+}
+
+.font-large {
+	font-family: Verdana, Arial;
+	font-size: x-large;
+}
+
+.table-header {
+	background-color: #CCCCFF;
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.table-row-alt {
+	background-color: #CCCCCC;
+}
+
+.table-row {
+	background-color: #EEEEEE;
+}
+
+.font-header {
+	font-family: Verdana, Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.font-small {
+	font-family: Verdana, Arial;
+	font-size: 10px;
+}
+
+.font-error {
+	font-family: Verdana, Arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+/*Box for error, info, success ect */
+.info {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	background: none repeat scroll 0 0 #D7E7F5;
+	border-color: #AACEE6;
+	color: #5E6984;
+}
+
+.success {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	background: none repeat scroll 0 0 #E2F2CE;
+	border-color: #BFE098;
+	color: #466840;
+}
+
+.notice {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	background: none repeat scroll 0 0 #FFF9CC;
+	border-color: #FFDB4F;
+	color: #736B4C;
+}
+
+.error {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	background: none repeat scroll 0 0 #FDE9EA;
+	border-color: #FDCED0;
+	color: #A14A40;
+}
+
+.info,.error,.notice,.success {
+	-moz-border-radius: 1px 1px 1px 1px;
+	border: 1px solid #BBBBBB;
+	margin-bottom: 20px;
+}
+
+.message_box_content {
+	border: 1px solid #FFFFFF;
+	padding: 10px;
+}
+
+/* Table-data refers to Table that displays data or list. */
+.table-data {
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 4px 4px 5px #888;
+	box-shadow: 4px 10px 5px #888;
+	padding: 0px;
+	margin: 8px;
+}
+
+.table-data thead tr {
+	background-color: #85BCF9;
+	font-size: larger;
+}
+
+.table-data tbody tr {
+	background-color: #EDEDED;
+}
+
+.table-data tbody tr:hover {
+	background-color: #DDEFFF;
+}
+
+/*this is used for div to clear line */
+clearboth {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+	width: 100%;
+}

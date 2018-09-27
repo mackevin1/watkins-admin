@@ -1,0 +1,71 @@
+Are you tired of buying 'static' admin panel templates which is difficult to integrate with actual back-end?
+
+What is Dynamic Admin Panel?
+	- Dynamic Admin Panel is a dynamic Control Panel with fully working front-end and back-end. It is created after the author's frustration with
+		static admin templates which is difficult to integrate with back-end (PHP and MySQL).
+
+	- Dynamic Admin Panel uses Bootstrap 3.1, jQuery, jQuery UI, jQuery ValidationEngine, PHP OOP and Zend Framework.
+	- It provides several core features, including Installer, User Management, Dashboard, Navigation Menu, Options and News.
+	- More features to come in coming months, this is a serious product with a lot of potential.
+
+	- It has 2 sections (Home and Control Panel) both using the same login page
+	---- Home for users
+	---- Control Panel for admin
+	
+Installer
+	- Comes with installer, setup is breeze
+	- Requires PHP 5.2+
+	- Requires PDO_Mysql. 
+	- Highly configurable config.php
+	- Error log mechanism (error.txt) to easily identify back-end problems (PHP, MySQL)
+	
+Dashboard
+	- Unlimited dashboard
+	- Each dashboard can have 1 or more column
+	- Each column can have 1 or more portlet
+	- A portlet content can be HTML content or URL via AJAX call
+	- Drag & drop feature (both on admin and user side)
+	- Open & Close a portlet
+	- Personalization - it remembers user preference
+	- Integrate with Navigation Menu
+	- Embed dashboard into any PHP file using generated 'Source Code'
+	
+Menu
+	- Bootstrap menu
+	- Support 4 levels of submenu
+	- Menu of 4 types: Internal URL, External URL, Parent Menu, Separator
+	- Unlimited number of menu, each can have unlimited number of menu items
+	- Supports Glyphicon and Font-awesome
+	- Re-order menu using Drag & Drop
+	
+User
+	- Unlimited number of users and administrators
+	- Login, logout, change password, update own profile
+	- User administration - add, display, modify, delete
+	- User administration - Search for users
+	- Disable user (cannot login, but userid is not deleted)
+	- Supports 2 roles: ADMIN & USER (more in the future)
+	- Retrieve lost password
+	- Session timeout, configurable through Option
+	
+Option
+	- Configurable option, can use Source Code to use in any PHP file
+	- Support Option Group... easier to manage and find options
+	- Create new Option using provided form
+	- Add, Modify, Delete options
+	
+News 
+	- News administration - add, display, modify, publish news
+	- Control news visible to public/ login users / both
+	- Control publish date, only appear during publish duration
+	- Automatically added into front page
+	
+Access Control List (ACL)
+	- Uses Zend Framework ACL classes.. very flexible and proven
+	- Create unlimited number of Role
+	- Each use is assigned to a Role
+	- Define Resource and Privilege, easily change using Checkboxes
+	- Built-in Integration with Menu (decide which menu visible to which role)
+	- Source Code Generator, place anywhere once and change access without coding
+	- Created sample/sample_acl.php to demonstrate how to use it 
+	
